@@ -1,0 +1,16 @@
+function padZero(n){
+  if (n < 10) return "0" + n else return "" + n
+}
+
+t = Math.floor(effect("Slider Control")("Slider"));
+hr = Math.floor(t/3600);
+min = Math.floor((t%3600)/60);
+sec = Math.floor(t%60);
+/*
+delete the comment tags and put in one line to add hours
+padZero(hr)+":"+            */
+
+padZero(min)+":"+padZero(sec)
+
+
+/* Script written by Josh Vickerson | https://twitter.com/joshvickerson */
